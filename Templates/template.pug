@@ -1,0 +1,32 @@
+html
+    head
+        //
+            Este comentario se compilara
+        //- Este comentario con guion no se compilara
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+        meta(name="author" content="Sergio Sandoval")
+        meta(name="copyright" content="sergiosandoval.pe.hu" )
+        meta(name="robots" content="index, follow" )
+        meta(name="keywords" content="diseño, css, hojas de estilos, web, html" )
+        meta(name="description" content="Artículos sobre diseño web, usabilidad y accesibilidad" )
+        meta(property="og:title" content="Tu Título" )
+        meta(property="og:description" content="La Descripcion")
+        meta(property="og:type" content="website" )
+        meta(property="og:url" content="aquí va tu web" )
+        meta(property="og:image" content="la url donde está tu imagen" )
+        meta(property="og:site_name" content="tu sitio web")
+        link(rel="stylesheet" href="css/main.css")
+        title   Hola
+    body
+        //los include son pedazos traidos es decir pedazos q se repiten para formar la plantilla
+        include blocks/banner_main
+        //los block se pueden personalizar en cada contenido
+        block nav
+        script(src="js/jquery1.11.js")
+        script(src="js/ed-grid.js")
+        script(src="js/bootstrap.js")
+        script(src="js/materialize.js")
+        script(src="js/eskju.jquery.scrollflow.js")
+        script(src="js/space.js")
+        script(src="js/scripts.js")
